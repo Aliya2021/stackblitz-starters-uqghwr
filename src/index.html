@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>My app</title>
+  </head>
+  <body>
+    <my-app>Loading...</my-app>
+    <h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+
+</div>
+  </body>
+</html>
